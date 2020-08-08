@@ -2,8 +2,14 @@
 <html>
     <header>
         <title>Fortune Cookies</title>
+        <link rel="stylesheet" href="./style.scss"/>
+        <script src="./requestFortune.js"></script>
     </header>
     <body>
-        
+        <div id="content-container">
+            <img src="./fortune-cookie.jpg" alt="fortune cookie" />
+            <input type="button" value="Request a fortune" onclick="fortune.requestFortune()"/>
+            <h2 id="fortune-text">Go ahead, request a fortune and it will appear here instead of this text...</h2>
+        </div>
     </body>
 </html>

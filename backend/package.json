@@ -4,11 +4,13 @@
   "description": "Fortune cookie serverless backend",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel -d dist fortune.js",
+    "deploy": "npx serverless deploy --config aws.yml"
   },
   "author": "Ahmed Sakr",
   "license": "ISC",
   "devDependencies": {
-    "serverless": "^1.78.1"
+    "@babel/cli": "^7.10.5",
+    "@babel/preset-env": "^7.11.0"
   }
 }

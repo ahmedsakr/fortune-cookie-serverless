@@ -1,0 +1,16 @@
+service: FortuneCookie
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: Ennel
+  region: ca-central-1
+  stackName: fortune-backend
+
+package:
+  include:
+    - ./**
+
+functions:
+  requestFortune:
+    handler: dist/fortune.fortuneHandler
