@@ -1,0 +1,14 @@
+{
+  "name": "fortune-cookie-backend",
+  "version": "1.0.0",
+  "description": "Fortune cookie serverless backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Sakr",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.78.1"
+  }
+}
